@@ -1,0 +1,43 @@
+# 🌱 Ambiente virtual
+venv/
+
+# 🐍 Cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 💾 Banco de dados local (SQLite)
+*.db
+
+# 🔐 Arquivos sensíveis
+.env
+instance/
+
+# 🔧 Arquivos temporários
+*.log
+*.swp
+*.swo
+*.bak
+
+# 📂 Migrações (opcional: ignore apenas se você recria as migrações)
+# migrations/
+
+# 🖼️ Sistemas operacionais
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# 💡 IDEs e editores
+.vscode/
+.idea/
+
+# 📦 Python packaging (caso venha a usar setup.py futuramente)
+build/
+dist/
+*.egg-info/
+
+# 📈 Relatórios de testes (pytest, coverage)
+htmlcov/
+.tox/
+.coverage
+.cache/
+
