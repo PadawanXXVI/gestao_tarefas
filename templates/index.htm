@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="pt-br" xml:lang="pt-br">
+<head>
+    <title>2025.1962.002 - Data Visualization: index.html | Faculdade</title>
+    <link rel="shortcut icon" href="https://moodle.df.senac.br/pluginfile.php/1/theme_lambda/favicon/1741910365/senac-2.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 2025.1962.002 - Data Visualization: index.html | Faculdade" />
+<link rel="stylesheet" type="text/css" href="https://moodle.df.senac.br/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://moodle.df.senac.br/theme/styles.php/lambda/1741910365_1722430935/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodle.df.senac.br","homeurl":{},"sesskey":"KP4sl2S5pB","sessiontimeout":"28800","sessiontimeoutwarning":1200,"themerev":"1741910365","slasharguments":1,"theme":"lambda","iconsystemmodule":"core\/icon_system_standard","jsrev":"1741910365","admin":"admin","svgicons":true,"usertimezone":"Am\u00e9rica\/S\u00e3o_Paulo","language":"pt_br","courseId":5305,"courseContextId":144890,"contextid":161088,"contextInstanceId":95843,"langrev":1743752447,"templaterev":"1741910365","siteId":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.df.senac.br\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/moodle.df.senac.br\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.df.senac.br\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.df.senac.br\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.df.senac.br\/theme\/yui_combo.php?m\/1741910365\/","combine":true,"comboBase":"https:\/\/moodle.df.senac.br\/theme\/yui_combo.php?","ext":false,"root":"m\/1741910365\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.df.senac.br\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.df.senac.br\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1741910365\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.df.senac.br\/lib\/javascript.php\/1741910365\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.df.senac.br\/lib\/javascript.php\/1741910365\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400%7COpen+Sans:700" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">
+</head>
+
+<body  id="page-mod-resource-view" class="format-multitopic  path-mod path-mod-resource chrome dir-ltr lang-pt_br yui-skin-sam yui3-skin-sam moodle-df-senac-br pagelayout-incourse course-5305 context-161088 cmid-95843 cm-type-resource category-803 theme columns3 has-region-side-pre has-region-side-post used-region-side-pre empty-region-side-post blockstyle-02 ver-m43 sidebar-enabled sidebar-closed">
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div><script src="https://moodle.df.senac.br/lib/javascript.php/1741910365/lib/polyfills/polyfill.js"></script>
+<script src="https://moodle.df.senac.br/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://moodle.df.senac.br/theme/jquery.php/core/jquery-3.7.1.min.js"></script>
+<script src="https://moodle.df.senac.br/lib/javascript.php/1741910365/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<div id="sidebar" class="">
+	<aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><h2 class="sr-only">Blocos</h2><a href="#sb-2" class="sr-only sr-only-focusable">Pular Navegação</a>
+
+<section id="inst30"
+     class=" block_navigation block  card mb-3"
+     role="navigation"
+     data-block="navigation"
+     data-instance-id="30"
+          aria-labelledby="instance-30-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h3 id="instance-30-header" class="h5 card-title d-inline">Navegação</h3>
+
+
+        <div class="card-text content mt-3">
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random67f479b38a10e3_group" data-collapsible="false" aria-labelledby="random67f479b38a10e2_label_1_1"><p class="tree_item branch navigation_node"><a tabindex="-1" id="random67f479b38a10e2_label_1_1" href="https://moodle.df.senac.br/">Página inicial</a></p><ul id="random67f479b38a10e3_group" role="group"><li class="type_setting depth_2 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e4_label_2_2"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e4_label_2_2" href="https://moodle.df.senac.br/my/"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/dashboard" /><span class="item-content-wrap">Painel</span></a></p></li><li class="type_course depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67f479b38a10e6_group" aria-labelledby="random67f479b38a10e4_label_2_3"><p class="tree_item branch"><span tabindex="-1" id="random67f479b38a10e4_label_2_3" title="Faculdade Senac">Páginas do site</span></p><ul id="random67f479b38a10e6_group" role="group" aria-hidden="true"><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e7_label_3_5"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e7_label_3_5" href="https://moodle.df.senac.br/my/courses.php"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/navigationitem" /><span class="item-content-wrap">Meus cursos</span></a></p></li><li class="type_unknown depth_3 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e7_label_3_6"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e7_label_3_6" href="https://moodle.df.senac.br/blog/index.php"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/navigationitem" /><span class="item-content-wrap">Blogs do site</span></a></p></li><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e7_label_3_7"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e7_label_3_7" href="https://moodle.df.senac.br/badges/view.php?type=1"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/navigationitem" /><span class="item-content-wrap">Emblemas do site</span></a></p></li><li class="type_setting depth_3 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e7_label_3_8"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e7_label_3_8" href="https://moodle.df.senac.br/tag/search.php"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/navigationitem" /><span class="item-content-wrap">Tags</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e7_label_3_10"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e7_label_3_10" title="Fórum" href="https://moodle.df.senac.br/mod/forum/view.php?id=6033"><img class="icon navicon" alt="Fórum" title="Fórum" src="https://moodle.df.senac.br/theme/image.php/lambda/forum/1741910365/monologo" /><span class="item-content-wrap">Avisos do site</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random67f479b38a10e13_group" aria-labelledby="random67f479b38a10e4_label_2_11"><p class="tree_item branch canexpand"><a tabindex="-1" id="random67f479b38a10e4_label_2_11" href="https://moodle.df.senac.br/my/courses.php">Meus cursos</a></p><ul id="random67f479b38a10e13_group" role="group"><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5320" data-node-key="5320" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_12"><p class="tree_item branch" id="expandable_branch_20_5320"><a tabindex="-1" id="random67f479b38a10e14_label_3_12" title="2a - CD-NOT3A - 01/2025 - Linguagem de Banco de Dados" href="https://moodle.df.senac.br/course/view.php?id=5320">2a - CD-NOT3A - 01/2025 - Linguagem de Banco de Dados</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5318" data-node-key="5318" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_13"><p class="tree_item branch" id="expandable_branch_20_5318"><a tabindex="-1" id="random67f479b38a10e14_label_3_13" title="CD-NOT3A - 01/2025 - Laboratório de Inovação III" href="https://moodle.df.senac.br/course/view.php?id=5318">CD-NOT3A - 01/2025 - Laboratório de Inovação III</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5306" data-node-key="5306" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_14"><p class="tree_item branch" id="expandable_branch_20_5306"><a tabindex="-1" id="random67f479b38a10e14_label_3_14" title="CD-NOT3A - 01/2025 - Engenharia de Machine Learning" href="https://moodle.df.senac.br/course/view.php?id=5306">CD-NOT3A - 01/2025 - Engenharia de Machine Learning</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random67f479b38a10e15_group" aria-labelledby="random67f479b38a10e14_label_3_15"><p class="tree_item branch canexpand"><a tabindex="-1" id="random67f479b38a10e14_label_3_15" title="CD-NOT3A - 01/2025 - Data Visualization" href="https://moodle.df.senac.br/course/view.php?id=5305">CD-NOT3A - 01/2025 - Data Visualization</a></p><ul id="random67f479b38a10e15_group" role="group"><li class="type_container depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67f479b38a10e17_group" aria-labelledby="random67f479b38a10e16_label_4_16"><p class="tree_item branch"><a tabindex="-1" id="random67f479b38a10e16_label_4_16" href="https://moodle.df.senac.br/user/index.php?id=5305">Participantes</a></p><ul id="random67f479b38a10e17_group" role="group" aria-hidden="true"><li class="type_setting depth_5 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e18_label_5_17"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e18_label_5_17" href="https://moodle.df.senac.br/blog/index.php?courseid=5305"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/navigationitem" /><span class="item-content-wrap">Blogs do curso</span></a></p></li><li class="type_user depth_5 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e18_label_5_18"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e18_label_5_18" href="https://moodle.df.senac.br/user/view.php?id=3189&amp;course=5305"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/navigationitem" /><span class="item-content-wrap">Anderson De Matos Guimarães</span></a></p></li></ul></li><li class="type_setting depth_4 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e16_label_4_19"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e16_label_4_19" href="https://moodle.df.senac.br/admin/tool/lp/coursecompetencies.php?courseid=5305"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/competencies" /><span class="item-content-wrap">Competências</span></a></p></li><li class="type_setting depth_4 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e16_label_4_20"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e16_label_4_20" href="https://moodle.df.senac.br/grade/report/index.php?id=5305"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/grades" /><span class="item-content-wrap">Notas</span></a></p></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67f479b38a10e23_group" aria-labelledby="random67f479b38a10e16_label_4_21"><p class="tree_item branch"><a tabindex="-1" id="random67f479b38a10e16_label_4_21" href="https://moodle.df.senac.br/course/view.php?id=5305">Apresentação</a></p><ul id="random67f479b38a10e23_group" role="group" aria-hidden="true"><li class="type_activity depth_5 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e24_label_5_22"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e24_label_5_22" title="Fórum" href="https://moodle.df.senac.br/mod/forum/view.php?id=85223"><img class="icon navicon" alt="Fórum" title="Fórum" src="https://moodle.df.senac.br/theme/image.php/lambda/forum/1741910365/icon" /><span class="item-content-wrap">Avisos</span></a></p></li><li class="type_activity depth_5 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e24_label_5_24"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e24_label_5_24" title="Página" href="https://moodle.df.senac.br/mod/page/view.php?id=85225"><img class="icon navicon" alt="Página" title="Página" src="https://moodle.df.senac.br/theme/image.php/lambda/page/1741910365/icon" /><span class="item-content-wrap">Vídeo de Apresentação da Disciplina</span></a></p></li></ul></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51816" data-node-key="51816" data-node-type="30" aria-labelledby="random67f479b38a10e16_label_4_25"><p class="tree_item branch" id="expandable_branch_30_51816"><a tabindex="-1" id="random67f479b38a10e16_label_4_25" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51816">Plano de ensino</a></p></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67f479b38a10e27_group" aria-labelledby="random67f479b38a10e16_label_4_26"><p class="tree_item branch canexpand"><a tabindex="-1" id="random67f479b38a10e16_label_4_26" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51817">Aula online</a></p><ul id="random67f479b38a10e27_group" role="group" aria-hidden="true"><li class="type_structure depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51818" data-node-key="51818" data-node-type="30" aria-labelledby="random67f479b38a10e28_label_5_27"><p class="tree_item branch" id="expandable_branch_30_51818"><a tabindex="-1" id="random67f479b38a10e28_label_5_27" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51817#sectionid-51818-title">1º Bimestre</a></p></li><li class="type_structure depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51819" data-node-key="51819" data-node-type="30" aria-labelledby="random67f479b38a10e28_label_5_28"><p class="tree_item branch" id="expandable_branch_30_51819"><a tabindex="-1" id="random67f479b38a10e28_label_5_28" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51817#sectionid-51819-title">2º Bimestre</a></p></li></ul></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67f479b38a10e29_group" aria-labelledby="random67f479b38a10e16_label_4_29"><p class="tree_item branch canexpand"><a tabindex="-1" id="random67f479b38a10e16_label_4_29" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51820">Conteúdos</a></p><ul id="random67f479b38a10e29_group" role="group" aria-hidden="true"><li class="type_structure depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51821" data-node-key="51821" data-node-type="30" aria-labelledby="random67f479b38a10e30_label_5_30"><p class="tree_item branch" id="expandable_branch_30_51821"><a tabindex="-1" id="random67f479b38a10e30_label_5_30" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51820#sectionid-51821-title">1º Bimestre</a></p></li><li class="type_structure depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51822" data-node-key="51822" data-node-type="30" aria-labelledby="random67f479b38a10e30_label_5_31"><p class="tree_item branch" id="expandable_branch_30_51822"><a tabindex="-1" id="random67f479b38a10e30_label_5_31" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51820#sectionid-51822-title">2º Bimestre</a></p></li></ul></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random67f479b38a10e31_group" aria-labelledby="random67f479b38a10e16_label_4_32"><p class="tree_item branch canexpand"><a tabindex="-1" id="random67f479b38a10e16_label_4_32" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51823">Atividades</a></p><ul id="random67f479b38a10e31_group" role="group"><li class="type_activity depth_5 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e32_label_5_33"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e32_label_5_33" title="Lição" href="https://moodle.df.senac.br/mod/lesson/view.php?id=94598"><img class="icon navicon" alt="Lição" title="Lição" src="https://moodle.df.senac.br/theme/image.php/lambda/lesson/1741910365/icon" /><span class="item-content-wrap">Exercícios</span></a></p></li><li class="type_activity depth_5 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e32_label_5_34"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e32_label_5_34" title="Arquivo" href="https://moodle.df.senac.br/mod/resource/view.php?id=94599"><img class="icon navicon" alt="Arquivo" title="Arquivo" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/f/pdf" /><span class="item-content-wrap">Aulas 1</span></a></p></li><li class="type_activity depth_5 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e32_label_5_35"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e32_label_5_35" title="Arquivo" href="https://moodle.df.senac.br/mod/resource/view.php?id=95840"><img class="icon navicon" alt="Arquivo" title="Arquivo" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/f/unknown" /><span class="item-content-wrap">Projeto inicial</span></a></p></li><li class="type_activity depth_5 item_with_icon current_branch" role="treeitem" aria-labelledby="random67f479b38a10e32_label_5_36"><p class="tree_item hasicon active_tree_node"><a tabindex="-1" id="random67f479b38a10e32_label_5_36" title="Arquivo" href="https://moodle.df.senac.br/mod/resource/view.php?id=95843"><img class="icon navicon" alt="Arquivo" title="Arquivo" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/f/markup" /><span class="item-content-wrap">index.html</span></a></p></li><li class="type_structure depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51824" data-node-key="51824" data-node-type="30" aria-labelledby="random67f479b38a10e32_label_5_37"><p class="tree_item branch" id="expandable_branch_30_51824"><a tabindex="-1" id="random67f479b38a10e32_label_5_37" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51823#sectionid-51824-title">1º Bimestre</a></p></li><li class="type_structure depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51825" data-node-key="51825" data-node-type="30" aria-labelledby="random67f479b38a10e32_label_5_38"><p class="tree_item branch" id="expandable_branch_30_51825"><a tabindex="-1" id="random67f479b38a10e32_label_5_38" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51823#sectionid-51825-title">2º Bimestre</a></p></li></ul></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67f479b38a10e37_group" aria-labelledby="random67f479b38a10e16_label_4_39"><p class="tree_item branch canexpand"><a tabindex="-1" id="random67f479b38a10e16_label_4_39" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51826">Avaliações</a></p><ul id="random67f479b38a10e37_group" role="group" aria-hidden="true"><li class="type_structure depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51827" data-node-key="51827" data-node-type="30" aria-labelledby="random67f479b38a10e38_label_5_40"><p class="tree_item branch" id="expandable_branch_30_51827"><a tabindex="-1" id="random67f479b38a10e38_label_5_40" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51826#sectionid-51827-title">Avaliação Bimestral</a></p></li><li class="type_structure depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_51828" data-node-key="51828" data-node-type="30" aria-labelledby="random67f479b38a10e38_label_5_41"><p class="tree_item branch" id="expandable_branch_30_51828"><a tabindex="-1" id="random67f479b38a10e38_label_5_41" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51826#sectionid-51828-title">Avaliação Bimestral</a></p></li></ul></li></ul></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5303" data-node-key="5303" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_42"><p class="tree_item branch" id="expandable_branch_20_5303"><a tabindex="-1" id="random67f479b38a10e14_label_3_42" title="CD-NOT3A - 01/2025 - Aprendizagem de Máquina Supervisionada" href="https://moodle.df.senac.br/course/view.php?id=5303">CD-NOT3A - 01/2025 - Aprendizagem de Máquina Super...</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5683" data-node-key="5683" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_43"><p class="tree_item branch" id="expandable_branch_20_5683"><a tabindex="-1" id="random67f479b38a10e14_label_3_43" title="ADS-MAT3A/MAT3B/NOT3A/NOT3B CD-MAT3A/NOT3A SI-MAT3A GC-MAT3A GTI-MAT3A MKT-MAT3A - 01/2025 - Extensão" href="https://moodle.df.senac.br/course/view.php?id=5683">ADS-MAT3A/MAT3B/NOT3A/NOT3B CD-MAT3A/NOT3A SI-MAT3...</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5649" data-node-key="5649" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_44"><p class="tree_item branch" id="expandable_branch_20_5649"><a tabindex="-1" id="random67f479b38a10e14_label_3_44" title="ADS-MAT3A/MAT3B/NOT3A/NOT3B CD-MAT3A/NOT3A - 01/2025 - Infraestrutura de Redes" href="https://moodle.df.senac.br/course/view.php?id=5649">ADS-MAT3A/MAT3B/NOT3A/NOT3B CD-MAT3A/NOT3A - 01/20...</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5647" data-node-key="5647" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_45"><p class="tree_item branch" id="expandable_branch_20_5647"><a tabindex="-1" id="random67f479b38a10e14_label_3_45" title="ADS-MAT3A/MAT3B/NOT3A/NOT3B CD-MAT3A/NOT3A - 01/2025 - Sistemas Operacionais" href="https://moodle.df.senac.br/course/view.php?id=5647">ADS-MAT3A/MAT3B/NOT3A/NOT3B CD-MAT3A/NOT3A - 01/20...</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5082" data-node-key="5082" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_46"><p class="tree_item branch" id="expandable_branch_20_5082"><a tabindex="-1" id="random67f479b38a10e14_label_3_46" title="Sala de Ambientação - Alunos SENAC 2025" href="https://moodle.df.senac.br/course/view.php?id=5082">Sala de Ambientação - Alunos SENAC 2025</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_659" data-node-key="659" data-node-type="20" aria-labelledby="random67f479b38a10e14_label_3_47"><p class="tree_item branch" id="expandable_branch_20_659"><a tabindex="-1" id="random67f479b38a10e14_label_3_47" title="Apoio ao Discente - NADIS" href="https://moodle.df.senac.br/course/view.php?id=659">Apoio ao Discente - NADIS</a></p></li><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random67f479b38a10e14_label_3_48"><p class="tree_item hasicon"><a tabindex="-1" id="random67f479b38a10e14_label_3_48" href="https://moodle.df.senac.br/my/courses.php"><img class="icon navicon" alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/navigationitem" /><span class="item-content-wrap">Mais...</span></a></p></li></ul></li></ul></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-2"></span></aside>    <div id="sidebar-btn"><span></span><span></span><span></span></div>
+</div>
+
+<div id="wrapper">
+
+
+    	<div class="container-fluid socials-header"> 
+    	
+	<div class="socials row-fluid">
+    
+    		<div class="span12"> 
+		        	<div class="social_icons pull-right">
+                <a class="social fab fa-facebook" href='http://www.facebook.com/senacdistritofederal' target='_blank'> </a>                <a class="social fab fa-flickr" href='https://www.flickr.com/photos/186818797@N04/albums' target='_blank'> </a>                <a class="social fab fa-twitter" href='http://twitter.com/senacdf' target='_blank'> </a>                                <a class="social fab fa-instagram" href='https://www.instagram.com/senacdf' target='_blank'> </a>                <a class="social fab fa-youtube" href='https://www.youtube.com/channel/UC4c2TAmjcBeePWpvmNeTvUw' target='_blank'> </a>                <a class="social fab fa-linkedin" href='http://www.linkedin.com/company/senacdf/' target='_blank'> </a>                            </div>
+        </div>
+        
+    </div>
+        </div>
+
+<header id="page-header" class="clearfix">              	
+		<div class="container-fluid">    
+	<div class="row-fluid">
+
+				<div class="span6">
+			<div class="logo-header">
+				<a class="logo" href="https://moodle.df.senac.br" title="Página inicial">
+					<img src="//moodle.df.senac.br/pluginfile.php/1/theme_lambda/logo/1741910365/Logo-SENAC-PNG.png" class="img-responsive" alt="logo" />				</a>
+			</div>
+		</div>
+		      	
+
+		<div class="span6 login-header">
+			<div class="profileblock">
+
+				<div id="loggedin-user"><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="3189"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-67f479b38ec9667f479b38a10e41"
+        aria-haspopup="true"
+        aria-label=" Mostrar janela de notificações sem as novas notificações   "
+        tabindex="0">
+                <img class="icon " alt="Alternar menu de notificações" title="Alternar menu de notificações" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/notifications" />
+        <div
+            class="count-container hidden"
+            data-region="count-container"
+            aria-hidden=true
+        >
+            0
+        </div>
+
+    </div>
+    <div 
+        id="popover-region-container-67f479b38ec9667f479b38a10e41"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Janela de notificação"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notificações</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Marcar tudo como lido"
+           data-action="mark-all-read"
+           role="button"
+           aria-label="Marcar tudo como lido">
+            <span class="normal-icon"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/markasread" /></span>
+            <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+        </a>
+            <a href="https://moodle.df.senac.br/message/notificationpreferences.php"
+               title="Preferências de notificação"
+               aria-label="Preferências de notificação">
+                <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/settings" /></a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Você não tem nenhuma notificação</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://moodle.df.senac.br/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Mostrar todos</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed" data-region="popover-region-messages">
+    <a id="message-drawer-toggle-67f479b38f05c67f479b38a10e42" class="nav-link popover-region-toggle position-relative icon-no-margin" href="#"
+            role="button">
+        <img class="icon " alt="Alternar menu de mensagens" title="Alternar menu de mensagens" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/message" />
+        <div
+            class="count-container hidden"
+            data-region="count-container"
+        >
+            <span aria-hidden="true">0</span>
+            <span class="sr-only">Há 0 conversas não lidas</span>
+        </div>
+    </a>
+    <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span></div><div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-0-menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a
+                            href="#"
+                            tabindex="0"
+                            class="nav-link dropdown-toggle icon-no-margin"
+                            id="action-menu-toggle-0"
+                            aria-label="Menu do usuário"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-controls="action-menu-0-menu"
+                        >
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Anderson De Matos Guimarães</span><span class="avatars"><span class="avatar current"><img src="https://moodle.df.senac.br/pluginfile.php/100926/user/icon/lambda/f2?rev=1189797" class="userpicture" width="35" height="35" alt="" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu menu dropdown-menu-right" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu">
+                                                                <a href="https://moodle.df.senac.br/user/profile.php" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Perfil</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://moodle.df.senac.br/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" tabindex="-1" >
+                                <span class="menu-action-text">Notas</span>
+                        </a>
+                                                                <a href="https://moodle.df.senac.br/calendar/view.php?view=month" class="dropdown-item menu-action" role="menuitem" data-title="calendar,core_calendar" tabindex="-1" >
+                                <span class="menu-action-text">Calendário</span>
+                        </a>
+                                                                <a href="https://moodle.df.senac.br/user/files.php" class="dropdown-item menu-action" role="menuitem" data-title="privatefiles,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Arquivos privados</span>
+                        </a>
+                                                                <a href="https://moodle.df.senac.br/reportbuilder/index.php" class="dropdown-item menu-action" role="menuitem" data-title="reports,core_reportbuilder" tabindex="-1" >
+                                <span class="menu-action-text">Relatórios</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://moodle.df.senac.br/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Preferências</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://moodle.df.senac.br/login/logout.php?sesskey=KP4sl2S5pB" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Sair</span>
+                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div><a href="https://moodle.df.senac.br/user/view.php?id=3189&amp;course=5305" class="d-inline-block aabtn"><img src="https://moodle.df.senac.br/pluginfile.php/100926/user/icon/lambda/f1?rev=1189797" class="welcome_userpicture" width="80" height="80" alt="Anderson De Matos Guimarães" title="Anderson De Matos Guimarães" /></a></div>
+						</div>
+					</div>
+
+				</div>
+			</div>               
+</header>
+<header class="navbar">
+    <nav class="navbar-inner">
+        <div class="lambda-custom-menu container-fluid">
+            <a class="brand" href="https://moodle.df.senac.br/?redirect=0">Faculdade</a>            <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a title="Painel" href="https://moodle.df.senac.br/my/index.php">Painel</a></li><li><a title="Meus cursos" href="https://moodle.df.senac.br/my/courses.php">Meus cursos</a></li></ul>                <ul class="nav pull-right">
+                    <li></li>
+                </ul>
+                
+                                
+                                <form id="search" action="https://moodle.df.senac.br/course/search.php" >
+                	<label for="coursesearchbox" class="lambda-sr-only">Buscar cursos</label>						
+					<input id="coursesearchbox" type="text" onFocus="if(this.value =='Buscar cursos' ) this.value=''" onBlur="if(this.value=='') this.value='Buscar cursos'" value="Buscar cursos" name="search" >
+					<button type="submit"><span class="lambda-sr-only">Enviar</span></button>						
+				</form>
+                                
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- Start Main Regions -->
+<div id="page" class="container-fluid">
+
+    <div id ="page-header-nav" class="clearfix">
+    	        <div id="page-navbar" class="clearfix">
+            <div class="breadcrumb-nav"><span class="accesshide" id="navbar-label">Caminho da página</span><nav aria-labelledby="navbar-label"><ul class="breadcrumb"><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://moodle.df.senac.br/"><span itemprop="title">Página inicial</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep" aria-hidden="true">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://moodle.df.senac.br/my/courses.php"><span itemprop="title">Meus cursos</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep" aria-hidden="true">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="CD-NOT3A - 01/2025 - Data Visualization" href="https://moodle.df.senac.br/course/view.php?id=5305"><span itemprop="title">CD-NOT3A - 01/2025 - Data Visualization</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep" aria-hidden="true">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51823"><span itemprop="title">Atividades</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep" aria-hidden="true">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Arquivo" aria-current="page" href="https://moodle.df.senac.br/mod/resource/view.php?id=95843"><span itemprop="title">index.html</span></a></span></li></ul></nav></div>
+            <nav class="breadcrumb-button"></nav>
+        </div>
+            </div>
+
+    <div id="page-content" class="row-fluid">
+        <div id="region-bs-main-and-pre" class="span9">
+            <div class="row-fluid">
+            	                <section id="region-main" class="span8">
+                                    <h2><div class="text_to_html">CD-NOT3A - 01/2025 - Data Visualization</div><small><div class="text_to_html">index.html</div></small></h2><div class="divider line-01"></div><div data-region="activity-information" data-activityname="index.html" class="activity-information">
+
+
+</div><div role="main"><div class="resourcecontent resourcegeneral">
+  <iframe id="resourceobject" src="https://moodle.df.senac.br/pluginfile.php/161088/mod_resource/content/1/index.html?embed=1" title="index.html">
+    Clique no link <a href="https://moodle.df.senac.br/pluginfile.php/161088/mod_resource/content/1/index.html" >index.html</a> para ver o arquivo.
+  </iframe>
+</div></div><div class="mt-5 mb-1 activity-navigation container-fluid">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://moodle.df.senac.br/mod/resource/view.php?id=95840&forceview=1" id="prev-activity-link" class="btn btn-link" >&#x25C4; Projeto inicial</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://moodle.df.senac.br/course/jumpto.php" class="d-flex flex-wrap align-items-center" id="url_select_f67f479b38a10e51">
+        <input type="hidden" name="sesskey" value="KP4sl2S5pB">
+            <label for="jump-to-activity" class="sr-only">
+                Seguir para...
+            </label>
+        <select  id="jump-to-activity" class="custom-select urlselect" name="jump"
+                 >
+                    <option value="" selected>Seguir para...</option>
+                    <option value="/mod/forum/view.php?id=85223&amp;forceview=1" >Avisos</option>
+                    <option value="/mod/page/view.php?id=85225&amp;forceview=1" >Vídeo de Apresentação da Disciplina</option>
+                    <option value="/mod/resource/view.php?id=85226&amp;forceview=1" >Plano de Ensino</option>
+                    <option value="/mod/resource/view.php?id=94597&amp;forceview=1" >Ementa</option>
+                    <option value="/mod/url/view.php?id=85227&amp;forceview=1" >Aula ao Vivo (link/Gravação)</option>
+                    <option value="/mod/url/view.php?id=85228&amp;forceview=1" >Aula ao Vivo (link/Gravação)</option>
+                    <option value="/mod/resource/view.php?id=85229&amp;forceview=1" >Slide da Aula 1</option>
+                    <option value="/mod/book/view.php?id=85230&amp;forceview=1" >Livro da Unidade</option>
+                    <option value="/mod/resource/view.php?id=85231&amp;forceview=1" >Slide da Aula 2</option>
+                    <option value="/mod/book/view.php?id=85232&amp;forceview=1" >Livro da Unidade</option>
+                    <option value="/mod/lesson/view.php?id=94598&amp;forceview=1" >Exercícios</option>
+                    <option value="/mod/resource/view.php?id=94599&amp;forceview=1" >Aulas 1</option>
+                    <option value="/mod/resource/view.php?id=95840&amp;forceview=1" >Projeto inicial</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Ok">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-right">
+            
+        </div>
+</div>
+</div>
+</div><div class="course-content-footer"><hr /><a href="https://moodle.df.senac.br/course/view.php?id=5305&amp;sectionid=51823"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/left" /> Back to course</a></div>                </section>
+                            </div>
+        </div>
+        <aside id="block-region-side-post" class="span3 block-region" data-blockregion="side-post" data-droptarget="1"><h2 class="sr-only">Blocos</h2></aside>    </div>
+    
+    <!-- End Main Regions -->
+
+    <a href="#top" class="back-to-top"><span class="lambda-sr-only">Voltar</span></a>
+
+	</div>
+	<div
+    id="drawer-67f479b39018a67f479b38a10e52"
+    class=" drawer bg-white hidden"
+    aria-expanded="false"
+    aria-hidden="true"
+    data-region="right-hand-drawer"
+    role="region"
+    tabindex="0"
+>
+            <div id="message-drawer-67f479b39018a67f479b38a10e52" class="message-app" data-region="message-drawer" role="region">
+    		<div class="drawer-top p-2 border-bottom bg-secondary text-right">
+        		<a id="message-drawer-close-67f479b39018a67f479b38a10e52" class="" href="#">
+            		<img class="icon " alt="Alternar menu de mensagens" title="Alternar menu de mensagens" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/window_close" />
+        		</a>
+    		</div>
+            <div class="header-container position-relative" data-region="header-container">
+                <div class="hidden border-bottom p-1 px-sm-2" aria-hidden="true" data-region="view-contacts">
+                    <div class="d-flex align-items-center">
+                        <div class="align-self-stretch">
+                            <a class="h-100 d-flex align-items-center mr-2" href="#" data-route-back role="button">
+                                <span class="dir-rtl-hide"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed_rtl" /></span>
+                                <span class="dir-ltr-hide"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed" /></span>                            </a>
+                        </div>
+                        <div>
+                            Contatos
+                        </div>
+                        <div class="ml-auto">
+                            <a href="#" data-route="view-search" role="button" aria-label="Pesquisar">
+                                <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/a/search" />
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+                <div
+                    class="hidden bg-white position-relative border-bottom p-1 px-sm-2"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                >
+                    <div class="hidden" data-region="header-content"></div>
+                    <div class="hidden" data-region="header-edit-mode">
+                        
+                        <div class="d-flex p-2 align-items-center">
+                            Mensagens selecionadas:
+                            <span class="ml-1" data-region="message-selected-court">1</span>
+                            <button type="button" class="ml-auto close" aria-label="Cancelar seleção de mensagem"
+                                data-action="cancel-edit-mode">
+                                    <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-region="header-placeholder">
+                        <div class="d-flex">
+                            <div
+                                class="ml-2 rounded-circle bg-pulse-grey align-self-center"
+                                style="height: 38px; width: 38px"
+                            >
+                            </div>
+                            <div class="ml-2 " style="flex: 1">
+                                <div
+                                    class="mt-1 bg-pulse-grey w-75"
+                                    style="height: 16px;"
+                                >
+                                </div>
+                            </div>
+                            <div
+                                class="ml-2 bg-pulse-grey align-self-center"
+                                style="height: 16px; width: 20px"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="hidden position-absolute z-index-1"
+                        data-region="confirm-dialogue-container"
+                        style="top: 0; bottom: -1px; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+                    ></div>
+                </div>                <div class="border-bottom px-2 py-3" aria-hidden="false"  data-region="view-overview">
+                    <div class="d-flex align-items-center">
+                        <div class="input-prepend d-flex flex-grow m-0">
+                            <span class="add-on bg-white pr-0">
+                                <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/a/search" />
+                            </span>
+                            <input
+                                type="text"
+                                class="form-control border-left-0 searchinput"
+                                placeholder="Pesquisar"
+                                aria-label="Pesquisar"
+                                data-region="view-overview-search-input"
+                            >
+                        </div>
+                        <div class="ml-2">
+                            <a
+                                href="#"
+                                data-route="view-settings"
+                                data-route-param="3189"
+                            >
+                                <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/edit" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-right mt-3">
+                        <a href="#" data-route="view-contacts" role="button">
+                            <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/user" />
+                            Contatos
+                            <span class="badge bg-primary ml-2 hidden"
+                            data-region="contact-request-count"
+                            aria-label="Há 0 solicitações de contato">
+                                0
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden border-bottom px-2 py-3 view-search"  aria-hidden="true" data-region="view-search">
+                    <div class="d-flex align-items-center">
+                        <a
+                            class="mr-2 align-self-stretch d-flex align-items-center"
+                            href="#"
+                            data-route-back
+                            data-action="cancel-search"
+                        >
+                            <span class="dir-rtl-hide"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed_rtl" /></span>
+                            <span class="dir-ltr-hide"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed" /></span>                        </a>
+                        <div class="input-append m-0 d-flex flex-grow">
+                            <input
+                                type="text"
+                                class="form-control border-right-0 searchinput"
+                                placeholder="Pesquisar"
+                                aria-label="Pesquisar"
+                                data-region="search-input"
+                            >
+                            <button
+                                class="btn m-0"
+                                type="button"
+                                data-action="search"
+                            >
+                                <span data-region="search-icon-container">
+                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/a/search" />
+                                </span>
+                                <span class="hidden" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>                
+                <div class="hidden border-bottom p-1 px-sm-2 pb-sm-3" aria-hidden="true" data-region="view-settings">
+                    <div class="d-flex align-items-center">
+                        <div class="align-self-stretch" >
+                            <a class="h-100 d-flex mr-2 align-items-center" href="#" data-route-back role="button">
+                                <span class="dir-rtl-hide"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed_rtl" /></span>
+                                <span class="dir-ltr-hide"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed" /></span>                            </a>
+                        </div>
+                        <div>
+                            Configurações
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-container position-relative" data-region="body-container">
+                
+                <div
+                    class="hidden"
+                    data-region="view-contact"
+                    aria-hidden="true"
+                >
+                    <div class="p-2 pt-3" data-region="content-container"></div>
+                </div>                <div class="hidden h-100" aria-hidden="true" data-region="view-contacts" data-user-id="3189">
+                    <div class="d-flex flex-column h-100">
+                        <div class="p-3 border-bottom">
+                            <ul class="nav nav-pills d-flex m-0" role="tablist">
+                                <li class="nav-item w-50 align-self-stretch text-center active">
+                                    <a
+                                        id="contacts-tab-67f479b39018a67f479b38a10e52"
+                                        class="nav-link"
+                                        href="#contacts-tab-panel-67f479b39018a67f479b38a10e52"
+                                        data-toggle="tab"
+                                        data-action="show-contacts-section"
+                                        role="tab"
+                                        aria-controls="contacts-tab-panel-67f479b39018a67f479b38a10e52"
+                                        aria-selected="true"
+                                    >
+                                        Contatos
+                                    </a>
+                                </li>
+                                <li class="nav-item w-50 text-center">
+                                    <a
+                                        id="requests-tab-67f479b39018a67f479b38a10e52"
+                                        class="nav-link"
+                                        href="#requests-tab-panel-67f479b39018a67f479b38a10e52"
+                                        data-toggle="tab"
+                                        data-action="show-requests-section"
+                                        role="tab"
+                                        aria-controls="requests-tab-panel-67f479b39018a67f479b38a10e52"
+                                        aria-selected="false"
+                                    >
+                                        Solicitações
+                                        <span class="badge bg-primary ml-2 hidden" data-region="contact-request-count">
+                                            0
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content d-flex flex-column h-100">
+                                            <div
+                    class="tab-pane fade in active h-100"
+                    style="overflow-y: auto"
+                    aria-live="polite"
+                    data-region="lazy-load-list"
+                    data-user-id="3189"
+                                        id="contacts-tab-panel-67f479b39018a67f479b38a10e52"
+                    data-section="contacts"
+                    role="tabpanel"
+                    aria-labelledby="contacts-tab-67f479b39018a67f479b38a10e52"
+
+                >
+                    <div class="onepix" style="height: 1px;">&nbsp;</div>
+                    
+                    <div class="hidden text-center p-2" data-region="empty-message-container">
+                        Sem contatos
+                    </div>
+                    <div class="hidden list-group" data-region="content-container">
+                        
+                    </div>
+                    <div class="list-group" data-region="placeholder-container">
+                                            <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>                    <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>                    <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>                    <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>                    <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>
+                    </div>
+                    <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                        <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                    </div>
+                </div>
+                
+                                            <div
+                    class="tab-pane fade h-100"
+                    style="overflow-y: auto"
+                    aria-live="polite"
+                    data-region="lazy-load-list"
+                    data-user-id="3189"
+                                        id="requests-tab-panel-67f479b39018a67f479b38a10e52"
+                    data-section="requests"
+                    role="tabpanel"
+                    aria-labelledby="requests-tab-67f479b39018a67f479b38a10e52"
+
+                >
+                    <div class="onepix" style="height: 1px;">&nbsp;</div>
+                    
+                    <div class="hidden text-center p-2" data-region="empty-message-container">
+                        Sem solicitações de contatos
+                    </div>
+                    <div class="hidden list-group" data-region="content-container">
+                        
+                    </div>
+                    <div class="list-group" data-region="placeholder-container">
+                        
+                    </div>
+                    <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                        <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>                
+                <div
+                    class="view-conversation hidden h-100"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                    data-user-id="3189"
+                    data-midnight="1743994800"
+                    data-message-poll-min="10"
+                    data-message-poll-max="120"
+                    data-message-poll-after-max="300"
+                    style="overflow-y: auto; overflow-x: hidden"
+                >
+                    <div class="position-relative h-100" data-region="content-container" style="overflow-y: auto; overflow-x: hidden">
+                        <div class="content-message-container hidden h-100 px-2 pt-0" data-region="content-message-container" role="log" style="overflow-y: auto; overflow-x: hidden">
+                            <div class="py-3 sticky-top z-index-1 border-bottom text-center hidden" data-region="contact-request-sent-message-container">
+                                <p class="m-0">Solicitação de contato enviado</p>
+                                <p class="font-italic font-weight-light" data-region="text"></p>
+                            </div>
+                            <div class="p-3 text-center hidden" data-region="self-conversation-message-container">
+                                <p class="m-0">Espaço pessoal</p>
+                                <p class="font-italic font-weight-light" data-region="text">Salve rascunhos de mensagens, links, notas etc. para acessar mais tarde.</p>
+                           </div>
+                            <div class="hidden text-center p-3" data-region="more-messages-loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</div>
+                        </div>
+                        <div class="p-4 w-100 h-100 hidden position-absolute z-index-1" data-region="confirm-dialogue-container" style="top: 0; background: rgba(0,0,0,0.3);">
+                            
+                            <div class="p-3 bg-white" data-region="confirm-dialogue" role="alert">
+                                <p class="text-muted" data-region="dialogue-text"></p>
+                                <div class="mb-2 custom-control custom-checkbox hidden" data-region="delete-messages-for-all-users-toggle-container">
+                                    <input type="checkbox" class="custom-control-input" id="delete-messages-for-all-users" data-region="delete-messages-for-all-users-toggle">
+                                    <label class="custom-control-label text-muted" for="delete-messages-for-all-users">
+                                        Excluir para mim e para todos os outros
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-block">
+                                    <span data-region="dialogue-button-text">Bloco</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-unblock">
+                                    <span data-region="dialogue-button-text">Desbloquear</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-remove-contact">
+                                    <span data-region="dialogue-button-text">Remover</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-add-contact">
+                                    <span data-region="dialogue-button-text">Adicionar</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-selected-messages">
+                                    <span data-region="dialogue-button-text">Excluir</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-conversation">
+                                    <span data-region="dialogue-button-text">Excluir</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="request-add-contact">
+                                    <span data-region="dialogue-button-text">Enviar solicitação de contato</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="accept-contact-request">
+                                    <span data-region="dialogue-button-text">Aceitar e adicionar aos contatos</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-block hidden" data-action="decline-contact-request">
+                                    <span data-region="dialogue-button-text">Recusar</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block" data-action="okay-confirm">OK</button>
+                                <button type="button" class="btn btn-secondary btn-block" data-action="cancel-confirm">Cancelar</button>
+                            </div>
+                        </div>
+                        <div class="px-2 pb-2 pt-0" data-region="content-placeholder">
+                            <div class="h-100 d-flex flex-column">
+                                <div
+                                    class="px-2 pb-2 pt-0 bg-light h-100"
+                                    style="overflow-y: auto"
+                                >
+                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                </div>
+                            </div>                        </div>
+                    </div>
+                </div>
+                
+                <div
+                    class="hidden"
+                    aria-hidden="true"
+                    data-region="view-group-info"
+                >
+                    <div
+                        class="pt-3 h-100 d-flex flex-column"
+                        data-region="group-info-content-container"
+                        style="overflow-y: auto"
+                    ></div>
+                </div>                <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview"  data-user-id="3189">
+                    <div id="message-drawer-view-overview-container-67f479b39018a67f479b38a10e52" class="d-flex flex-column h-100" style="overflow-y: auto">
+                            
+                            <div
+                                class="accordion-group section border-0 "
+                                data-region="view-overview-favourites"
+                            >
+                                <div id="view-overview-favourites-toggle" class="accordion-heading" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-2 m-0 d-flex align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-parent="#message-drawer-view-overview-container-67f479b39018a67f479b38a10e52"
+                                        data-target="#view-overview-favourites-target"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-favourites-target"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed" />
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/expanded" />
+                                        </span>
+                                        <strong>Favoritos</strong>
+                                        <small class="hidden ml-1" data-region="section-total-count-container">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class=" accordion-body collapse border-bottom "
+                                style="overflow-y: auto"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="3189"
+                                            id="view-overview-favourites-target"
+            aria-labelledby="view-overview-favourites-toggle"
+            data-parent="#message-drawer-view-overview-container"
+
+                            >
+                                <div class="onepix" style="height: 1px;">&nbsp;</div>
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Nenhuma conversa favoritada</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div
+                                class="accordion-group section border-0 "
+                                data-region="view-overview-group-messages"
+                            >
+                                <div id="view-overview-group-messages-toggle" class="accordion-heading" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-2 m-0 d-flex align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-parent="#message-drawer-view-overview-container-67f479b39018a67f479b38a10e52"
+                                        data-target="#view-overview-group-messages-target"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-group-messages-target"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed" />
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/expanded" />
+                                        </span>
+                                        <strong>Grupo</strong>
+                                        <small class="hidden ml-1" data-region="section-total-count-container">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class=" accordion-body collapse border-bottom "
+                                style="overflow-y: auto"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="3189"
+                                            id="view-overview-group-messages-target"
+            aria-labelledby="view-overview-group-messages-toggle"
+            data-parent="#message-drawer-view-overview-container"
+
+                            >
+                                <div class="onepix" style="height: 1px;">&nbsp;</div>
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Nenhuma conversa em grupo</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div
+                                class="accordion-group section border-0 "
+                                data-region="view-overview-messages"
+                            >
+                                <div id="view-overview-messages-toggle" class="accordion-heading" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-2 m-0 d-flex align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-parent="#message-drawer-view-overview-container-67f479b39018a67f479b38a10e52"
+                                        data-target="#view-overview-messages-target"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-messages-target"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/collapsed" />
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/t/expanded" />
+                                        </span>
+                                        <strong>Privado</strong>
+                                        <small class="hidden ml-1" data-region="section-total-count-container">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class=" accordion-body collapse border-bottom "
+                                style="overflow-y: auto"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="3189"
+                                            id="view-overview-messages-target"
+            aria-labelledby="view-overview-messages-toggle"
+            data-parent="#message-drawer-view-overview-container"
+
+                            >
+                                <div class="onepix" style="height: 1px;">&nbsp;</div>
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Nenhuma conversa privada</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div
+                    data-region="view-search"
+                    aria-hidden="true"
+                    class="h-100 hidden"
+                    data-user-id="3189"
+                    data-users-offset="0"
+                    data-messages-offset="0"
+                    style="overflow-y: auto"
+                    
+                >
+                    <div class="hidden" data-region="search-results-container" style="overflow-y: auto">
+                        
+                        <div class="d-flex flex-column">
+                            <div class="mb-3 bg-white" data-region="all-contacts-container">
+                                <div data-region="contacts-container"  class="pt-2">
+                                    <h3 class="h6 px-2">Contatos</h3>
+                                    <div class="list-group" data-region="list"></div>
+                                </div>
+                                <div data-region="non-contacts-container" class="pt-2 border-top">
+                                    <h3 class="h6 px-2">Não contatos</h3>
+                                    <div class="list-group" data-region="list"></div>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-link text-primary" data-action="load-more-users">
+                                        <span data-region="button-text">Carregue mais</span>
+                                        <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-white" data-region="messages-container">
+                                <h3 class="h6 px-2 pt-2">Mensagens</h3>
+                                <div class="list-group" data-region="list"></div>
+                                <div class="text-right">
+                                    <button class="btn btn-link text-primary" data-action="load-more-messages">
+                                        <span data-region="button-text">Carregue mais</span>
+                                        <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="hidden p-3 text-center" data-region="no-results-container">Nenhum resultado</p>
+                        </div>                    </div>
+                    <div class="hidden" data-region="loading-placeholder">
+                        <div class="text-center pt-3 icon-size-4"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</div>
+                    </div>
+                    <div class="p-3 text-center" data-region="empty-message-container">
+                        <p>Pesquisar pessoas e mensagens</p>
+                    </div>
+                </div>                
+                <div class="h-100 hidden bg-white" aria-hidden="true" data-region="view-settings">
+                    <div class="hidden" data-region="content-container">
+                        
+                        <div data-region="settings" class="p-3">
+                            <h3 class="h6 font-weight-bold">Privacidade</h3>
+                            <p>Você pode restringir quem pode enviar uma mensagem para você</p>
+                            <div data-preference="blocknoncontacts" class="mb-3">
+                                <fieldset>
+                                    <legend class="sr-only">Aceitar mensagens de:</legend>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input
+                                                type="radio"
+                                                name="message_blocknoncontacts"
+                                                class="custom-control-input"
+                                                id="block-noncontacts-67f479b39018a67f479b38a10e52-1"
+                                                value="1"
+                                            >
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-67f479b39018a67f479b38a10e52-1">
+                                                Apenas meus contatos
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input
+                                                type="radio"
+                                                name="message_blocknoncontacts"
+                                                class="custom-control-input"
+                                                id="block-noncontacts-67f479b39018a67f479b38a10e52-0"
+                                                value="0"
+                                            >
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-67f479b39018a67f479b38a10e52-0">
+                                                Meus contatos e qualquer pessoa em meus cursos
+                                            </label>
+                                        </div>
+                                </fieldset>
+                            </div>
+                        
+                            <div class="hidden" data-region="notification-preference-container">
+                                <h3 class="mb-2 mt-4 h6 font-weight-bold">Preferências de notificação</h3>
+                            </div>
+                        
+                            <h3 class="mb-2 mt-4 h6 font-weight-bold">Geral</h3>
+                            <div data-preference="entertosend">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="enter-to-send-67f479b39018a67f479b38a10e52" checked>
+                                    <label class="custom-control-label" for="enter-to-send-67f479b39018a67f479b38a10e52">
+                                        Use 'enter' para enviar
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-region="placeholder-container">
+                        
+                        <div class="d-flex flex-column p-3">
+                            <div class="w-25 bg-pulse-grey h6" style="height: 18px"></div>
+                            <div class="w-75 bg-pulse-grey mb-4" style="height: 18px"></div>
+                            <div class="mb-3">
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                            <div class="w-50 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                            <div class="mb-4">
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                            <div class="w-25 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                            <div class="mb-3">
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                        </div>                    </div>
+                </div>            </div>
+            <div class="footer-container position-relative" data-region="footer-container">
+                
+                <div
+                    class="hidden border-top bg-white position-relative"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                    data-enter-to-send="1"
+                >
+                    <div class="hidden p-sm-2" data-region="content-messages-footer-container">
+                        
+                            <div
+                                class="emoji-auto-complete-container w-100 hidden"
+                                data-region="emoji-auto-complete-container"
+                                aria-live="polite"
+                                aria-hidden="true"
+                            >
+                            </div>
+                        <div class="d-flex mt-sm-1">
+                            <textarea
+                                dir="auto"
+                                data-region="send-message-txt"
+                                class="form-control bg-light"
+                                rows="3"
+                                data-auto-rows
+                                data-min-rows="3"
+                                data-max-rows="5"
+                                aria-label="Escrever uma mensagem..."
+                                placeholder="Escrever uma mensagem..."
+                                style="resize: none"
+                                maxlength="4096"
+                            ></textarea>
+                        
+                            <div class="position-relative d-flex flex-column">
+                                    <div
+                                        data-region="emoji-picker-container"
+                                        class="emoji-picker-container hidden"
+                                        aria-hidden="true"
+                                    >
+                                        
+                                        <div
+                                            data-region="emoji-picker"
+                                            class="card shadow emoji-picker"
+                                        >
+                                            <div class="card-header px-1 pt-1 pb-0 d-flex justify-content-between flex-shrink-0">
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0 selected"
+                                                    data-action="show-category"
+                                                    data-category="Recent"
+                                                    title="Recente"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategoryrecent" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Smileys & Emotion"
+                                                    title="Smileys e emoção"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategorysmileysemotion" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="People & Body"
+                                                    title="Pessoas e corpo"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategorypeoplebody" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Animals & Nature"
+                                                    title="Animais e natureza"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategoryanimalsnature" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Food & Drink"
+                                                    title="Comidas e bebidas"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategoryfooddrink" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Travel & Places"
+                                                    title="Viagens e lugares"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategorytravelplaces" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Activities"
+                                                    title="Atividades"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategoryactivities" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Objects"
+                                                    title="Objetos"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategoryobjects" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Symbols"
+                                                    title="Símbolos"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategorysymbols" />
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Flags"
+                                                    title="Bandeiras"
+                                                >
+                                                    <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/emojicategoryflags" />
+                                                </button>
+                                            </div>
+                                            <div class="card-body p-2 d-flex flex-column overflow-hidden">
+                                                <div class="input-group mb-1 flex-shrink-0">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text pr-0 bg-white text-muted">
+                                                            <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/search" />
+                                                        </span>
+                                                    </div>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control border-left-0"
+                                                        placeholder="Buscar"
+                                                        aria-label="Buscar"
+                                                        data-region="search-input"
+                                                    >
+                                                </div>
+                                                <div class="flex-grow-1 overflow-auto emojis-container h-100" data-region="emojis-container">
+                                                    <div class="position-relative" data-region="row-container"></div>
+                                                </div>
+                                                <div class="flex-grow-1 overflow-auto search-results-container h-100 hidden" data-region="search-results-container">
+                                                    <div class="position-relative" data-region="row-container"></div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex flex-shrink-0"
+                                                data-region="footer"
+                                            >
+                                                <div class="emoji-preview" data-region="emoji-preview"></div>
+                                                <div data-region="emoji-short-name" class="emoji-short-name text-muted text-wrap ml-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn btn-link btn-icon icon-size-3 ml-1"
+                                        aria-label="Alternar seletor de emoji"
+                                        data-action="toggle-emoji-picker"
+                                    >
+                                        <img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/e/emoticons" />
+                                    </button>
+                                <button
+                                    class="btn btn-link btn-icon icon-size-3 ml-1 mt-auto"
+                                    aria-label="Enviar mensagem"
+                                    data-action="send-message"
+                                >
+                                    <span data-region="send-icon-container"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/sendmessage" /></span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden p-sm-2" data-region="content-messages-footer-edit-mode-container">
+                        
+                        <div class="d-flex p-3">
+                            <button
+                                class="btn btn-link btn-icon my-1 icon-size-4 ml-auto"
+                                data-action="delete-selected-messages"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="Apagar mensagens selecionadas"
+                            >
+                                <span data-region="icon-container"><img class="icon " alt="" aria-hidden="true" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/trash" /></span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                                <span class="sr-only">Apagar mensagens selecionadas</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-require-contact-container">
+                        
+                        <div class="p-3 bg-white">
+                            <p data-region="title"></p>
+                            <p class="text-muted" data-region="text"></p>
+                            <button type="button" class="btn btn-primary btn-block" data-action="request-add-contact">
+                                <span data-region="dialogue-button-text">Enviar solicitação de contato</span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-require-unblock-container">
+                        
+                        <div class="p-3 bg-white">
+                            <p class="text-muted" data-region="text">Você bloqueou este usuário.</p>
+                            <button type="button" class="btn btn-primary btn-block" data-action="request-unblock">
+                                <span data-region="dialogue-button-text">Desbloquear usuário</span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Carregando" title="Carregando" src="https://moodle.df.senac.br/theme/image.php/lambda/core/1741910365/i/loading" /></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-unable-to-message">
+                        
+                        <div class="p-3 bg-white">
+                            <p class="text-muted" data-region="text">Você não consegue enviar mensagens para esse usuário</p>
+                        </div>
+                    </div>
+                    <div class="p-sm-2" data-region="placeholder-container">
+                        <div class="d-flex">
+                            <div class="bg-pulse-grey w-100" style="height: 80px"></div>
+                            <div class="mx-2 mb-2 align-self-end bg-pulse-grey" style="height: 20px; width: 20px"></div>
+                        </div>                    </div>
+                    <div
+                        class="hidden position-absolute z-index-1"
+                        data-region="confirm-dialogue-container"
+                        style="top: -1px; bottom: 0; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+                    ></div>
+                </div>                    <div data-region="view-overview" class="text-center">
+                        <a href="https://moodle.df.senac.br/message/index.php">
+                            Mostrar todos
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+</div>	<footer id="page-footer" class="container-fluid">
+			<div class="row-fluid">
+		<aside id="block-region-footer-left" class="span4 block-region" data-blockregion="footer-left" data-droptarget="1"></aside><aside id="block-region-footer-middle" class="span4 block-region" data-blockregion="footer-middle" data-droptarget="1"></aside><aside id="block-region-footer-right" class="span4 block-region" data-blockregion="footer-right" data-droptarget="1"></aside> 	</div>
+
+	<div class="footerlinks">
+    	<div class="row-fluid">
+    		<p class="helplink"></p>
+    		<div class="footnote"><p dir="ltr" style="text-align:left;"></p><p><b><b>Os conhecimentos alimentam novas possibilidades e abrem portas. </b></b></p><b></b><p><b>SENAC © 2021. </b></p><br /><p></p></div>		</div>
+        
+                
+   	</div><div class="logininfo">Você acessou como <a href="https://moodle.df.senac.br/user/profile.php?id=3189" title="Ver perfil">Anderson De Matos Guimarães</a> (<a href="https://moodle.df.senac.br/login/logout.php?sesskey=KP4sl2S5pB">Sair</a>)</div>	</footer>
+</div>
+<script>(function($) {
+	$(document).ready(function(){
+
+	function refreshlogs() {
+		$('.reportbuilder-table .dropdown .dropdown-menu a.dropdown-item[data-action="report-action-popup"]').each(function(){
+			var action = $(this).attr("data-popup-action");
+			var replace = action.indexOf("\\\/");
+			if (replace != -1) {
+				var newattrval = action.replaceAll("\\","");
+				$(this).attr("data-popup-action",newattrval);
+			}
+		});
+	}
+
+	if ($('body').is('#page-grade-report-grader-index.ver-m43')) {
+		$(document).on('click', '.group-search div[data-toggle="dropdown"]', function(event) {
+			event.preventDefault();
+			$(this).next('.dropdown-menu').slideToggle("fast");
+		});
+		$(document).on('click', function (e) {
+			if(!$('.group-search .dropdown-menu').is(e.target) && !$('.group-search div[data-toggle="dropdown"]').has(e.target).length){
+				$('.group-search .dropdown-menu').slideUp("fast");
+			}                       
+		});
+	}
+
+	if ($('body').is('#page-grade-import-csv-index, #page-grade-import-direct-index, #page-grade-import-xml-index')) {
+		$(document).on('click', '.container-fluid.tertiary-navigation .navitem:last-child .dropdown.select-menu .btn.dropdown-toggle', function(event) {
+			event.preventDefault();
+			$(this).next('.dropdown-menu').slideToggle("fast");
+		});
+	}
+
+	if ($('body').is('#page-mod-scorm-report')) {
+		$(document).on('click', '.container-fluid.tertiary-navigation a#dropdownMenuLink', function(event) {
+			event.preventDefault();
+			$(this).next('.dropdown-menu').slideToggle("fast");
+		});
+	}
+
+	if ($('body').is('.path-grade.path-grade-export')) {
+		$(document).on('click', '.container-fluid.tertiary-navigation .navitem:last-child .dropdown.select-menu .btn.dropdown-toggle', function(event) {
+			event.preventDefault();
+			$(this).next('.dropdown-menu').slideToggle("fast");
+		});
+	}
+
+	if ($('body').is('#page-grade-report-grader-index.ver-m41')) {
+		$('.select-group.groups-top').clone().appendTo('.tertiary-navigation .navitem .search-widget .dropdown-menu.narrow');
+	}
+
+	$(".path-grade.ver-m41 .tertiary-navigation-selector .select-menu .dropdown-menu li:first-child li.dropdown-item:nth-child(5)").remove();
+	$(".path-grade.ver-m41 .tertiary-navigation-selector .select-menu .dropdown-menu li:first-child li.dropdown-item:nth-child(6)").remove();
+	$(".path-grade.ver-m41 .block.block_settings .block_tree.list li.contains_branch:first-child li.item_with_icon:nth-child(4)").remove();
+	$(".path-grade.ver-m41 .block.block_settings .block_tree.list li.contains_branch:first-child li.item_with_icon:nth-child(5)").remove();
+	$(".path-grade.ver-m43 .tertiary-navigation-selector .select-menu .dropdown-menu li:first-child li.dropdown-item:nth-child(5)").remove();
+	$(".path-grade.ver-m43 .tertiary-navigation-selector .select-menu .dropdown-menu li:first-child li.dropdown-item:nth-child(6)").remove();
+	$(".path-grade.ver-m43 .block.block_settings .block_tree.list li.contains_branch:first-child li.item_with_icon:nth-child(4)").remove();
+	$(".path-grade.ver-m43 .block.block_settings .block_tree.list li.contains_branch:first-child li.item_with_icon:nth-child(5)").remove();
+	
+	$(".message.clickable.d-flex").last().focus({focusVisible: true});
+
+	$(".format-tiles.editing li.course-section .course-content-item-content").removeClass("show");
+	$(".path-course.format-topics .course-content-item-content.collapse.show").addClass("in");
+	$(".path-course.format-weeks .course-content-item-content.collapse.show").addClass("in");
+	$(".editing .cm_action_menu .dropdown-item.editing_moveleft").click(function(event) {
+		event.preventDefault();
+		var listItem = $(this).closest("li");
+		listItem.removeClass("indented");
+	});
+	$(".initials-selector .initialswidget").on("click", function(){
+		$(".initials-selector .initialsdropdown.dropdown-menu").toggleClass("show");
+	});
+	$(".initials-selector .initialsdropdown .btn-outline-secondary").on("click", function(){
+		$(".initials-selector .initialsdropdown.dropdown-menu").removeClass("show");
+	});		
+
+	$('.select-menu ul.dropdown-menu li.dropdown-item').each(function(){
+		const url = $(this).attr("data-value");
+		this.innerHTML = '<a href="'+ url +'">' + this.innerHTML +'</a>';
+	});
+
+	$(document).on('click', '.tiny_media_form li', function(event) {
+		event.preventDefault();
+		$("a.nav-link.active").removeClass('active');
+	});
+
+	$(document).on('click', '.tiny_media_form fieldset.collapsible legend', function(event) {
+		event.preventDefault();
+		$(this).toggleClass("open");
+		var fcontainer = $(this).siblings(".fcontainer");
+		fcontainer.toggleClass("show");
+	});
+
+	if ($('body').is('#page-mod-quiz-review')) {
+		$('a[data-toggle="popover"]').each(function() {
+		  $(this).removeAttr('href');
+		});
+	}
+
+	$('#user-grades').on('click', '.cellmenubtn', function() {
+		$('#user-grades .cell').css('z-index', '');
+		var $cell = $(this).closest('.cell');
+		$cell.css('z-index', 3);
+	});
+
+	$('#page-admin-reportbuilder-edit').on('click', 'a.nav-link', function() {
+		$("a.nav-link.active").removeClass('active');
+		$(".tab-content .tab-pane.fade.container-fluid ").removeClass('fade');
+	});
+
+	var pageURL = $(location).attr("href");
+	if (pageURL.indexOf("message/index.php?view=contactrequests") >= 0) {
+		$(".nav-pills .nav-item:first-child:not(.checked)").removeClass("active");
+		$(".nav-pills .nav-item:nth-child(2):not(.checked)").addClass("active");
+		$(".nav-pills .nav-item").addClass("checked");
+
+		$(".body-container .tab-content .tab-pane:nth-child(2):not(.checked)").addClass("in");
+		$(".body-container .tab-content .tab-pane:first-child:not(.checked)").removeClass("in");
+		$(".body-container .tab-content .tab-pane").addClass("checked");
+
+		$(".nav-pills .nav-item .nav-link[data-action='show-contacts-section']").on("click", function(){
+			$(".body-container .tab-content .tab-pane").removeClass("show");
+		});
+		$(".nav-pills .nav-item .nav-link[data-action='show-requests-section']").on("click", function(){
+			$(".body-container .tab-content .tab-pane").removeClass("show");
+		});
+	}
+  
+	$(".pagelayout-admin form.mform .collapsible-actions a.btn-link.collapseexpand").click(function(e) {
+		e.preventDefault();
+		if ($(this).hasClass("collapsed")) {
+		$(".pagelayout-admin form.mform fieldset.collapsible").removeClass("collapsed");
+		} else {
+		$(".pagelayout-admin form.mform fieldset.collapsible").addClass("collapsed");
+		}
+		$(".pagelayout-admin form.mform .collapsible-actions a.btn-link.collapseexpand").toggleClass("collapsed");
+  	});
+
+	if (pageURL.indexOf("admin/tasklogs.php") >= 0) {
+		refreshlogs();
+		$(document).on('click', '.pagination .page-link, a[data-action="showcount"]', function(event) {
+			setTimeout(function() {
+				refreshlogs();
+			}, 500);
+		});
+		$(document).on('click', '#filters input[type="submit"]', function(event) {
+			setTimeout(function() {
+				refreshlogs();
+			}, 500);
+		});
+	}
+
+	if ($('body').hasClass('path-grade-report')) {
+		$('a[href*="/grade/report/index.php"]').each(function() {
+		  $(this).attr('href', function(index, oldValue) {
+			return oldValue.replace('/grade/report/index.php', '/grade/report/grader/index.php');
+		  });
+		});
+	}
+
+	var offset = 1;
+    var duration = 1;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+	});
+	jQuery('.back-to-top').click(function(event) {
+    	event.preventDefault();
+    	jQuery('html, body').animate({scrollTop: 0}, duration);
+    	return false;
+	});
+
+	var pathname = window.location.href;
+	var index = pathname.indexOf("&section=");
+	var backlink = pathname.substring(0,index);
+	$("#back-to-main-link").attr('href', backlink);
+	
+	$(document).on('click', 'button[data-toggle="dropdown"], .action-menu a[data-toggle="dropdown"], .lambda-custom-menu .nav-collapse.in a[data-toggle="dropdown"], .ml-auto.dropdown a[data-toggle="dropdown"], .tertiary-navigation-selector .dropdown.select-menu .btn[data-toggle="dropdown"]', function(event) {
+		event.preventDefault();
+		var subpanelContent = $(this).next('.dropdown-menu').find('.dropdown-subpanel-content');
+		subpanelContent.removeClass('show');
+  		$(this).next('.dropdown-menu').slideToggle("fast");
+	});
+	$(document).on('click', '#page-grade-report-grader-index .search-widget .btn.dropdown-toggle', function(event) {
+		event.preventDefault();
+  		$(this).next('.dropdown-menu').slideToggle("fast");
+	});
+	$(document).on('click', function (e) {
+    	if(!$('button[data-toggle="dropdown"]').is(e.target) && !$('button[data-toggle="dropdown"]').has(e.target).length && !$('a[data-toggle="dropdown"]').is(e.target) && !$('a[data-toggle="dropdown"]').has(e.target).length && !$('.btn[data-toggle="dropdown"]').is(e.target) && !$('.btn[data-toggle="dropdown"]').has(e.target).length && !$(".atto_hasmenu").is(e.target) && !$(".reportbuilder-filters-sidebar *").is(e.target)){
+        	$('.dropdown .dropdown-menu:not(.lambda-login)').slideUp("fast");
+    	}                       
+	});
+	$(document).on('click', '.modchooser button[data-action="show-option-summary"], .modchooser button.closeoptionsummary', function(event) {
+		$('.carousel-item[data-region="modules"]').toggleClass("active");
+		$('.carousel-item[data-region="help"]').toggleClass("active");
+	});
+	$(document).on('click', '#dynamictabs-tabs .nav-item', function(event) {
+		$('#editor-tab').removeClass("active");
+	});
+
+	});
+}) (jQuery);
+
+
+var togglesidebar = function() {
+  var sidebar_open = Y.one('body').hasClass('sidebar-open');
+  if (sidebar_open) {
+    Y.one('body').removeClass('sidebar-open');
+    M.util.set_user_preference('theme_lambda_sidebar', 'sidebar-closed');
+  } else {
+    Y.one('body').addClass('sidebar-open');
+    M.util.set_user_preference('theme_lambda_sidebar', 'sidebar-open');
+  }
+};
+
+M.theme_lambda = M.theme_lambda || {};
+M.theme_lambda.sidebar =  {
+  init: function() {
+    Y.one('body').delegate('click', togglesidebar, '#sidebar-btn');
+  }
+};</script>
+<body> <!-- Inicio do corpo da página -->
+
+  ... <!-- Conteúdo da página -->
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+</body> <!-- Fim do corpo da página -->
+
+
+
+<script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://moodle.df.senac.br/lib/requirejs.php/1741910365/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://moodle.df.senac.br/lib/javascript.php/1741910365/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://moodle.df.senac.br/lib/javascript.php/1741910365/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://moodle.df.senac.br/lib/javascript.php/1741910365/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://moodle.df.senac.br/lib/javascript.php/1741910365/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('pt-BR');
+});;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"pt-br"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("29", null); M.util.js_complete('block_settings/settingsblock');});;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("30"); M.util.js_complete('block_navigation/navblock');});;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, Controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new Controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(
+[
+    'jquery',
+    'core_message/message_popover'
+],
+function(
+    $,
+    Popover
+) {
+    var toggle = $('#message-drawer-toggle-67f479b38f05c67f479b38a10e42');
+    Popover.init(toggle);
+});
+;
+M.util.js_pending('core_courseformat/local/content/activity_header'); require(['core_courseformat/local/content/activity_header'], function(amd) {amd.init(); M.util.js_complete('core_courseformat/local/content/activity_header');});;
+
+        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+            CustomEvents.define('#jump-to-activity', [CustomEvents.events.accessibleChange]);
+            $('#jump-to-activity').on(CustomEvents.events.accessibleChange, function() {
+                if ($(this).val()) {
+                    $('#url_select_f67f479b38a10e51').submit();
+                }
+            });
+        });
+    ;
+
+require(
+[
+    'jquery',
+    'core_message/message_drawer',
+    'core_message/message_popover'
+],
+function(
+    $,
+    MessageDrawer,
+    Popover
+) {
+
+    var root = $('#message-drawer-67f479b39018a67f479b38a10e52');
+    MessageDrawer.init(root);
+
+    var toggle = $('#message-drawer-close-67f479b39018a67f479b38a10e52');
+    Popover.init(toggle);
+});
+;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?delayStartupUntil=configured"></script>
+<script src="https://moodle.df.senac.br/theme/javascript.php/lambda/1741910365/footer"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima atualiza\u00e7\u00e3o","name":"Nome","error":"Erro","info":"Informa\u00e7\u00e3o","yes":"Sim","no":"N\u00e3o","viewallcourses":"Ver todos os cursos","cancel":"Cancelar","morehelp":"Mais ajuda","loadinghelp":"Carregando...","confirm":"Confirmar","areyousure":"Voc\u00ea tem certeza?","closebuttontitle":"Fechar","unknownerror":"Erro desconhecido","file":"Arquivo","url":"URL","collapseall":"Contrair tudo","expandall":"Expandir tudo"},"repository":{"type":"Tipo","size":"Tamanho","invalidjson":"palavra JSON inv\u00e1lida","nofilesattached":"Nenhum arquivo anexado","filepicker":"Seletor de arquivos","logout":"Sair","nofilesavailable":"Nenhum arquivo dispon\u00edvel","norepositoriesavailable":"Desculpe, nenhum dos seus reposit\u00f3rios atuais pode retornar arquivos no formato solicitado.","fileexistsdialogheader":"Arquivo existe","fileexistsdialog_editor":"Um arquivo com este nome j\u00e1 foi anexado ao texto que voc\u00ea est\u00e1 editando.","fileexistsdialog_filemanager":"Um arquivo com este nome j\u00e1 foi anexado","renameto":"Renomear para \"{$a}\"","referencesexist":"Existem {$a} links para esse arquivo","select":"Selecione"},"admin":{"confirmdeletecomments":"Voc\u00ea tem certeza que deseja excluir os coment\u00e1rios selecionado(s)?","confirmation":"Confirma\u00e7\u00e3o"},"debug":{"debuginfo":"Informa\u00e7\u00f5es de depura\u00e7\u00e3o","line":"Linha","stacktrace":"Rastreamento de pilha"},"langconfig":{"labelsep":":&nbsp;"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() { M.util.js_pending('random67f479b38a10e1'); Y.on('domready', function() { M.util.init_maximised_embed(Y, "resourceobject");  M.util.js_complete('random67f479b38a10e1'); });
+Y.use("moodle-theme_lambda-sidebar",function() {M.theme_lambda.sidebar.init();
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random67f479b38a10e53'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random67f479b38a10e53'); });
+})();
+//]]>
+</script>
+
+</body>
+</html>
