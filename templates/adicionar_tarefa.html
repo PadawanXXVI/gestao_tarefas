@@ -1,0 +1,22 @@
+<form method="POST">
+    <label for="nome">Nome da Tarefa:</label>
+    <input type="text" name="nome" required>
+
+    <label for="responsavel_id">Responsável:</label>
+    <select name="responsavel_id">
+        {% for colaborador in colaboradores %}
+        <option value="{{ colaborador.id }}">{{ colaborador.nome }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="data_inicio">Data de Início Planejada:</label>
+    <input type="date" name="data_inicio" required>
+
+    <label for="data_fim">Data de Término Planejada:</label>
+    <input type="date" name="data_fim" required>
+
+    <label for="horas_planejadas">Horas Planejadas:</label>
+    <input type="number" step="0.1" name="horas_planejadas" value="0.0" required>
+
+    <button type="submit">Adicionar Tarefa</button>
+</form>

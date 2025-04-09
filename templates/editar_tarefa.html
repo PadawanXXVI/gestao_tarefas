@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Tarefa</title>
+</head>
+<body>
+    <h1>Editar Tarefa</h1>
+    <form method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="{{ tarefa.nome }}" required><br><br>
+
+        <label for="responsavel_id">Responsável:</label>
+        <select id="responsavel_id" name="responsavel_id" required>
+            {% for colaborador in colaboradores %}
+                <option value="{{ colaborador.id }}" {% if colaborador.id == tarefa.responsavel_id %} selected {% endif %}>
+                    {{ colaborador.nome }}
+                </option>
+            {% endfor %}
+        </select><br><br>
+
+        <label for="horas_planejadas">Horas Planejadas:</label>
+        <input type="number" id="horas_planejadas" name="horas_planejadas" value="{{ tarefa.horas_planejadas }}" step="0.1" required><br><br>
+
+        <label for="data_inicio_planejada">Data de Início Planejada:</label>
+        <input type="date" id="data_inicio_planejada" name="data_inicio_planejada" value="{{ tarefa.data_inicio_planejada }}" required><br><br>
+
+        <label for="data_fim_planejada">Data de Fim Planejada:</label>
+        <input type="date" id="data_fim_planejada" name="data_fim_planejada" value="{{ tarefa.data_fim_planejada }}" required><br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+    <br>
+    <a href="{{ url_for('visualizar_projeto', projeto_id=tarefa.topico.projeto_id) }}">Voltar</a>
+</body>
+</html>

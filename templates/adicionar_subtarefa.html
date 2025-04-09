@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Subtarefa</title>
+</head>
+<body>
+    <h1>Adicionar Subtarefa para "{{ tarefa_pai.nome }}"</h1>
+    <form method="POST">
+        Nome: <input type="text" name="nome" required><br>
+        Responsável:
+        <select name="responsavel_id" required>
+            {% for colaborador in colaboradores %}
+                <option value="{{ colaborador.id }}">{{ colaborador.nome }}</option>
+            {% endfor %}
+        </select><br>
+        Horas Gastas: <input type="number" name="horas_gastas" step="0.1" required><br>
+        Data de Início: <input type="date" name="data_inicio" required><br>
+        Data de Fim: <input type="date" name="data_fim" required><br>
+        <button type="submit">Salvar</button>
+    </form>
+    <a href="{{ url_for('visualizar_projeto', projeto_id=tarefa_pai.projeto_id) }}">Voltar</a>
+</body>
+</html>

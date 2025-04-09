@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Tópico</title>
+</head>
+<body>
+
+    <h1>Editar Tópico</h1>
+    <form method="POST">
+        Nome do Tópico: <input type="text" name="nome" value="{{ topico.nome }}" required><br>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <a href="{{ url_for('visualizar_projeto', projeto_id=topico.projeto_id) }}">⬅️ Voltar</a>
+
+</body>
+</html>

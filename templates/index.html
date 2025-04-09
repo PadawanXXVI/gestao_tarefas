@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Projetos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <h1 class="text-3xl font-bold text-blue-600">📊 Gestão de Projetos</h1>
+
+        <div class="flex space-x-4 my-4">
+            <a href="{{ url_for('adicionar_projeto') }}" class="px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600">➕ Adicionar Projeto</a>
+            <a href="{{ url_for('adicionar_colaborador') }}" class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600">👤 Adicionar Colaborador</a>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-gray-800 mt-6">📂 Lista de Projetos</h2>
+        {% if projetos %}
+            <ul class="mt-4 space-y-2">
+                {% for projeto in projetos %}
+                    <li class="p-4 bg-gray-200 rounded-lg shadow">
+                        📂 <a href="{{ url_for('visualizar_projeto', projeto_id=projeto.id) }}" class="text-blue-600 font-semibold hover:underline">{{ projeto.nome }}</a>
+                        <span class="text-gray-700">(Prazo: {{ projeto.prazo_nominal }} dias, Início: {{ projeto.data_inicio }})</span>
+                        <div class="mt-2">
+                            <a href="{{ url_for('editar_projeto', projeto_id=projeto.id) }}" class="text-yellow-500 hover:underline">✏️ Editar</a>
+                            <a href="{{ url_for('excluir_projeto', projeto_id=projeto.id) }}" class="text-red-500 hover:underline ml-4"
+                               onclick="return confirm('Tem certeza que deseja excluir este projeto?');">
+                                🗑️ Excluir
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-red-600 mt-4">⚠️ Nenhum projeto cadastrado.</p>
+        {% endif %}
+
+        <h2 class="text-2xl font-semibold text-gray-800 mt-6">👥 Lista de Colaboradores</h2>
+        {% if colaboradores %}
+            <ul class="mt-4 space-y-2">
+                {% for colaborador in colaboradores %}
+                    <li class="p-4 bg-gray-200 rounded-lg shadow">
+                        👤 <span class="font-semibold">{{ colaborador.nome }}</span> - {{ colaborador.cargo }} (R$ {{ colaborador.custo_hora }}/h)
+                        <a href="{{ url_for('excluir_colaborador', colaborador_id=colaborador.id) }}" class="text-red-500 hover:underline ml-4"
+                           onclick="return confirm('Tem certeza que deseja excluir este colaborador?');">
+                            🗑️ Excluir
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-red-600 mt-4">⚠️ Nenhum colaborador cadastrado.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

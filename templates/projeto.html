@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ projeto.nome }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
+        <h1 class="text-3xl font-bold text-blue-600">📁 Projeto: {{ projeto.nome }}</h1>
+        <p class="mt-2 text-gray-700"><strong>Prazo Nominal:</strong> {{ projeto.prazo_nominal }} dias</p>
+        <p class="text-gray-700"><strong>Data de Início:</strong> {{ projeto.data_inicio }}</p>
+        <p class="text-gray-700 font-semibold mt-4">Progresso do Projeto: 📊 {{ progresso_total|round(2) }}% concluído</p>
+
+        <hr class="my-6">
+
+        <div class="flex space-x-4 mb-6">
+            <a href="{{ url_for('adicionar_topico', projeto_id=projeto.id) }}" class="px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600">➕ Adicionar Tópico</a>
+            <a href="{{ url_for('dashboard_projeto', projeto_id=projeto.id) }}" class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600">📊 Ver Dashboard</a>
+        </div>
+
+
+        <!-- 🔍 Lista de Tópicos e Tarefas -->
+        <h2 class="text-2xl font-semibold text-gray-800">Tópicos e Subtópicos</h2>
+        <ul class="mt-4">
+            {% for topico, nivel in topicos %}
+                <li class="ml-{{ nivel * 5 }} px-4 py-2 bg-gray-200 rounded-lg mb-2 shadow">
+                    🔥 <strong>{{ topico.nome }}</strong>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        {% set tem_tarefas = tarefas|selectattr("topico_id", "equalto", topico.id)|list %}
+                        {% if not tem_tarefas %}
+                            <a href="{{ url_for('adicionar_topico', projeto_id=projeto.id) }}" class="text-green-600 hover:underline">➕ Subtópico</a>
+                        {% endif %}
+                        {% set tem_subtopicos = topicos|selectattr("parent_id", "equalto", topico.id)|list %}
+                        {% if not tem_subtopicos %}
+                            <a href="{{ url_for('adicionar_tarefa', topico_id=topico.id) }}" class="text-blue-600 hover:underline">📄 Adicionar Tarefa</a>
+                        {% endif %}
+                        <a href="{{ url_for('editar_topico', topico_id=topico.id) }}" class="text-yellow-600 hover:underline">✏ Editar</a>
+                        <a href="{{ url_for('excluir_topico', topico_id=topico.id) }}" class="text-red-600 hover:underline">🗑 Excluir</a>
+                    </div>
+
+                    {% if tem_tarefas %}
+                        <ul class="mt-3 pl-4 border-l-4 border-gray-400">
+                            {% for tarefa in tem_tarefas %}
+                                <li class="mb-2 p-3 bg-white rounded-lg shadow">
+                                    📄 <strong>{{ tarefa.nome }}</strong> (Responsável: {{ tarefa.responsavel.nome }})
+                                    <div class="text-sm text-gray-600">
+                                        Planejado: ⏳ {{ tarefa.data_inicio_planejada }} → ⌛ {{ tarefa.data_fim_planejada }}
+                                    </div>
+                                    <a href="{{ url_for('editar_tarefa', tarefa_id=tarefa.id) }}" class="text-yellow-600 hover:underline text-sm">✏ Editar Planejado</a>
+
+                                    <div class="mt-2 text-sm">
+                                        <strong>Executado:</strong>
+                                        {% if hoje > tarefa.data_fim_planejada.strftime('%Y-%m-%d') and tarefa.percentual_execucao == 0 %}
+                                            <span class="text-red-600 font-bold">📅 Atrasado (não iniciado)</span>
+                                        {% elif hoje > tarefa.data_inicio_planejada.strftime('%Y-%m-%d') and tarefa.percentual_execucao == 0 %}
+                                            <span class="text-red-600 font-bold">📅 Atrasado (não iniciado)</span>
+                                        {% elif hoje == tarefa.data_inicio_planejada.strftime('%Y-%m-%d') and tarefa.percentual_execucao == 0 %}
+                                            <span class="text-orange-600 font-bold">⏳ Ainda não iniciado</span>
+                                        {% elif hoje > tarefa.data_fim_planejada.strftime('%Y-%m-%d') and tarefa.percentual_execucao < 100 %}
+                                            <span class="text-red-600 font-bold">🚨 Atrasado ({{ tarefa.percentual_execucao }}% concluído)</span>
+                                        {% elif tarefa.percentual_execucao > 0 and tarefa.percentual_execucao < 100 %}
+                                            <span class="text-orange-600 font-bold">⚙️ Executando ({{ tarefa.percentual_execucao }}%)</span>
+                                        {% elif tarefa.percentual_execucao == 100 %}
+                                            <span class="text-green-600 font-bold">✅ Concluído</span>
+                                        {% else %}
+                                            <span class="text-gray-600 font-bold">🔘 Sem informações</span>
+                                        {% endif %}
+                                    </div>
+                                    <a href="{{ url_for('atualizar_execucao_tarefa', tarefa_id=tarefa.id) }}" class="text-blue-600 hover:underline text-sm">✏ Atualizar Execução</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+   <!-- 🧭 Gantt Avançado -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">📅 Gantt Planejado com Linha de Prazo Contratual</h2>
+            <div class="bg-white p-4 rounded-xl shadow border overflow-x-auto">
+                {{ gantt_html | safe }}
+            </div>
+        </div>
+
+        <hr class="my-6">
+        <a href="{{ url_for('index') }}" class="px-4 py-2 bg-gray-500 text-white rounded-lg shadow hover:bg-gray-600">⬅️ Voltar</a>
+    </div>
+</body>
+</html>

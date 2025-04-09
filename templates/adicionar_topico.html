@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Tópico</title>
+</head>
+<body>
+
+    <h1>Adicionar Tópico</h1>
+    <form method="POST">
+        Nome do Tópico: <input type="text" name="nome" required><br>
+
+        <!-- Seleção do tópico pai (opcional) -->
+        <label for="parent_id">Tópico Pai (opcional):</label>
+        <select name="parent_id">
+            <option value="">Nenhum (Tópico Principal)</option>
+            {% for topico in topicos %}
+                <option value="{{ topico.id }}">{{ topico.nome }}</option>
+            {% endfor %}
+        </select>
+        <br>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <a href="{{ url_for('visualizar_projeto', projeto_id=projeto_id) }}">⬅️ Voltar</a>
+
+</body>
+</html>

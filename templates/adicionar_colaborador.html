@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Colaborador</title>
+</head>
+<body>
+
+    <h1>Adicionar Novo Colaborador</h1>
+
+    <form method="POST">
+        <label>Nome:</label>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Cargo:</label>
+        <input type="text" name="cargo" required><br><br>
+
+        <label>Custo por Hora (R$):</label>
+        <input type="number" name="custo_hora" step="0.01" required><br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <a href="{{ url_for('index') }}">⬅️ Voltar</a>
+
+</body>
+</html>
